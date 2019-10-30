@@ -35,5 +35,5 @@ for list in ${packagelist[@]}; do
     sudo -E apt-get install -y ${list}
 done
 
-sudo apt-get update
-sudo apt-get upgrade
+sudo -E apt-get update
+sudo -E apt-get upgrade
