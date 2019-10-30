@@ -32,7 +32,7 @@ packagelist=(
 
 echo "start apt-get install apps..."
 for list in ${packagelist[@]}; do
-    sudo apt-get install -y ${list}
+    sudo apt-get install -E -y ${list}
 done
 
 sudo apt-get update
