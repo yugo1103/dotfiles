@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DOT_FILES=(.zshrc .zplug)
+DOT_FILES=(.zshrc)
 
 for file in ${DOT_FILES[@]}
 do
