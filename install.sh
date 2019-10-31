@@ -39,4 +39,9 @@ done
 sudo -E apt-get update
 sudo -E apt-get upgrade
 
+#zplugインストール
 curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh| zsh
+#fzfインストール
+git clone --depth 1 https://github.com/junegunn/fzf.git ${HOME}/.fzf
+${HOME}/.fzf/install
+
