@@ -266,6 +266,8 @@ tmux_automatically_attach_session
 source $HOME/.zplug/init.zsh
 zplug "changyuheng/fz", defer:1
 zplug "rupa/z", use:z.sh
+zplug "zsh-users/zsh-autosuggestions"
+zplug "zsh-users/zsh-syntax-highlighting"
 if ! zplug check --verbose; then
     printf "install? [y/n]: "
     if read -q; then
@@ -384,6 +386,4 @@ PROMPT="
 ${prompt_location}"'$vcs_info_msg_0_'"
 ${promot_mark} "
 
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 alias curl="curl -x http://www-proxy.waseda.jp:8080/"

@@ -28,6 +28,7 @@ echo "linked dotfiles complete!"
 packagelist=(
 #terminal
      "tmux"
+     "gawk"
 )
 
 echo "start apt-get install apps..."
