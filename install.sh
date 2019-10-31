@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -u
+set -eu
 DOT_DIRECTORY="${HOME}/dotfiles"
 DOT_CONFIG_DIRECTORY=".config"
 
@@ -34,6 +34,8 @@ echo "start apt-get install apps..."
 for list in ${packagelist[@]}; do
     sudo -E apt-get install -y ${list}
 done
+
+curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh| zsh
 
 sudo -E apt-get update
 sudo -E apt-get upgrade
