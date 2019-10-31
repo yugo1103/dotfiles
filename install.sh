@@ -1,5 +1,14 @@
 #!/bin/bash
 
+check_os(){
+    os_name="$(uname)"
+    if [ "$os_name" != "Linux" ]; then
+        print_error "Sorry, this script is intended only for LinuxOS"
+        exit 1
+    fi
+}
+
+
 set -eu
 DOT_DIRECTORY="${HOME}/dotfiles"
 DOT_CONFIG_DIRECTORY=".config"
