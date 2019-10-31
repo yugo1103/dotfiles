@@ -259,7 +259,7 @@ deploy() {
     #deploy_zplug_files
     deploy_selfmade_rcfiles
     deploy_fzf
-    #compile_zshfiles
+    compile_zshfiles
     install_vim_plugins
 
     git_configulation
